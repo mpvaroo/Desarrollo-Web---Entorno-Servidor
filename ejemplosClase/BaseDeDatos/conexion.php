@@ -21,6 +21,7 @@
     try {
         $conex = new mysqli("localhost", "dwes", "abc123.", "dwes");
         $conex->set_charset("utf8mb4");
+    }
         
     ?>
 </body>
