@@ -1,0 +1,22 @@
+h1 {
+    margin-bottom: 0;
+}
+
+#encabezado {
+    background-color: #ddf0a4;
+    padding: 10px;
+}
+
+#contenido {
+    background-color: #EEEEEE;
+    height: 600px;
+    padding: 10px;
+}
+
+#pie {
+    background-color: #ddf0a4;
+    color: #ff0000;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}

@@ -9,7 +9,7 @@
     <?php
 
     ?>
-     <form action="datos2.php" method="POST">
+    <form action="datos2.php" method="POST">
         Nombre: <input type="text" name="nombre" value="<?= isset($_POST['nombre']) ? $_POST['nombre'] : '' ?>"><br>
         Apellido: <input type="text" name="apellido" value="<?= isset($_POST['apellido']) ? $_POST['apellido'] : '' ?>"><br>
         <input type="hidden" name="direccion" value="<?= isset($_POST['direccion']) ? $_POST['direccion'] : '' ?>"><br>
