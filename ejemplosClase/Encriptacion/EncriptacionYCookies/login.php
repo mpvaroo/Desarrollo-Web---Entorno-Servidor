@@ -38,10 +38,10 @@ if (isset($_POST['Acceder'])) {
             if (password_verify($_POST['pass'], $datos->pass)) {
 
                 setcookie("dni", $datos->dni);
-                setcookie("Nombre", $datos->nombre);
-                setcookie("Apellidos", $datos->apellido);
-                setcookie("Correo", $datos->email);
-                setcookie("Contraseña", $datos->pass);
+                setcookie("nombre", $datos->nombre);
+                setcookie("apellidos", $datos->apellido);
+                setcookie("correo", $datos->email);
+                setcookie("contraseña", $datos->pass);
 
                 if (isset($_POST['recuerdame'])) {
                     setcookie("rec_email", $_POST['email'], time() + 60 * 10);
@@ -105,5 +105,9 @@ if (!empty($error_mail)) {
 
 if (!empty($error_pass)) {
     echo "<p style='color:red;'>$error_pass</p>";
+}
+
+if (isset($_GET['msg']) && $_GET['msg'] === "ok"){
+    echo "<p style=color:green>Usuario registrado correctamente</p>";
 }
 ?>
