@@ -5,19 +5,6 @@
 </form>
 <?php
 if (isset($_POST['entrar'])) {
-    /* try {
-        $conex = new mysqli('localhost', 'dwes', 'abc123.', 'empleados');
-        $conex->set_charset('utf8mb4');
-        $resultados=$conex->query("SELECT * FROM datos WHERE usuario=BINARY'$_POST[usu]' AND password=BINARY'$_POST[pass]'");
-    } catch (Exception $e) {
-        echo $e->getMessage();
-    }
-    if($resultados->num_rows){
-        echo "Has entrado con exito";
-    }else{
-        echo "CREDENCIALES INCORRECTAS";
-    } */
-
 
     try {
         $conex = new mysqli('localhost', 'dwes', 'abc123.', 'empleados');
